@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.proyecto.libroschill"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.proyecto.libroschill"
