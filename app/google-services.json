@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "333899848821",
+    "project_id": "libroschill-e4a5a",
+    "storage_bucket": "libroschill-e4a5a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333899848821:android:661072c791f73fb8026c3c",
+        "android_client_info": {
+          "package_name": "com.proyecto.libroschill"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvw80TzIcDIiz8RMLyNfwrGhmD9drei_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
