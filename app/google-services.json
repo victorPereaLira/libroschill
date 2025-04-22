@@ -12,7 +12,20 @@
           "package_name": "com.proyecto.libroschill"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "333899848821-58htva4mkusuomvf8gn9sao5b081gf3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proyecto.libroschill",
+            "certificate_hash": "43dc6ea69f67875101f869e9f8c54359a178e200"
+          }
+        },
+        {
+          "client_id": "333899848821-0dj1qnregcji47csoqj7gnpacf4idf3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAvw80TzIcDIiz8RMLyNfwrGhmD9drei_0"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333899848821-0dj1qnregcji47csoqj7gnpacf4idf3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
