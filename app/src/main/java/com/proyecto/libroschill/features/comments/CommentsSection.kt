@@ -24,8 +24,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.proyecto.libroschill.R
 import com.proyecto.libroschill.data.repository.getUserNickname
 
 @Composable
@@ -54,11 +56,11 @@ fun CommentsSection(
     }
 
     Column(modifier = Modifier.padding(16.dp)) {
-        Text(text = "Comentarios", style = MaterialTheme.typography.titleMedium)
+        Text(text = stringResource(R.string.comentarios), style = MaterialTheme.typography.titleMedium)
         Spacer(Modifier.height(8.dp))
 
         if (comments.isEmpty()) {
-            Text("Aún no hay comentarios", style = MaterialTheme.typography.bodySmall, color = Color.Gray)
+            Text(stringResource(R.string.NoComentarios), style = MaterialTheme.typography.bodySmall, color = Color.Gray)
         } else {
             LazyColumn(modifier = Modifier.heightIn(max = 250.dp)) {
                 items(comments) { CommentItem(it) }
@@ -71,7 +73,7 @@ fun CommentsSection(
             TextField(
                 value = commentText,
                 onValueChange = { viewModel.commentText = it },
-                placeholder = { Text("Escribe un comentario...") },
+                placeholder = { Text(stringResource(R.string.EscribeComentario)) },
                 modifier = Modifier.weight(1f)
             )
 
@@ -86,7 +88,7 @@ fun CommentsSection(
                 if (isLoading) {
                     CircularProgressIndicator(modifier = Modifier.size(16.dp), strokeWidth = 2.dp)
                 } else {
-                    Text("Enviar")
+                    Text(stringResource(R.string.enviar))
                 }
             }
         }

@@ -27,6 +27,7 @@
     <string name="nickname">Apodo</string>
     <string name="Descripcion">Descripcion</string>
     <string name="leerMasDescripcion">Leer mas</string>
+    <string name="leerMenos">Leer menos</string>
     <string name="estadisticas">Estadisticas</string>
     <string name="read">Leidos</string>
     <string name="pending">Pendientes</string>
@@ -37,7 +38,5 @@
     <string name="noBooksPending">No hay libros pendientes</string>
     <string name="RestablecerPassowrd">Reestablecer Contraseña</string>
     <string name="CorreoEnviado">Correo de restablecimiento enviado</string>
-
-
-
+    <string name="EscribeComentario">Escribe un comentario…</string>"
 </resources>

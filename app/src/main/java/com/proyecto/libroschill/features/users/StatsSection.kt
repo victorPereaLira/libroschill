@@ -8,7 +8,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-
 @Composable
 fun StatsSection(
     readCount: Int,
@@ -27,7 +26,7 @@ fun StatsSection(
             horizontalArrangement = Arrangement.SpaceEvenly,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            StatItem("Leidos", readCount)
+            StatItem("Leídos", readCount)
             StatItem("Pendientes", pendingCount)
             StatItem("Favoritos", favoritesCount)
         }

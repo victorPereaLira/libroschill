@@ -64,7 +64,7 @@ fun UserScreen(
         }
     }
 
-    // 🔄 Cargar nickname e imágenes
+    //Cargar nickname e imágenes
     LaunchedEffect(Unit) {
         profileViewModel.loadProfileImage()
 

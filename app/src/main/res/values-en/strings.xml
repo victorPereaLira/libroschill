@@ -28,6 +28,7 @@
     <string name="nickname">Nickname</string>
     <string name="Descripcion">Description</string>
     <string name="leerMasDescripcion">Read more</string>
+    <string name="leerMenos">Read less</string>
     <string name="estadisticas">Statistics</string>
     <string name="read">Read</string>
     <string name="pending">Pending</string>

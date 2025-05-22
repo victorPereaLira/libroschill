@@ -20,12 +20,14 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.gson.Gson
 import com.proyecto.libroschill.BuildConfig
+import com.proyecto.libroschill.R
 import com.proyecto.libroschill.navigation.ScreenWithDrawer
 import com.proyecto.libroschill.features.books.components.GenreFilter
 import com.proyecto.libroschill.features.books.components.BookItem
@@ -90,7 +92,7 @@ fun LikeScreen(
 
             if (filteredBooks.isEmpty()) {
                 Text(
-                    text = "No hay libros favoritos en esta categoría.",
+                    text = stringResource(R.string.noBooksFav),
                     style = MaterialTheme.typography.bodyLarge,
                     modifier = Modifier
                         .fillMaxWidth()

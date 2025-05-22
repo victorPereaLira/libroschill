@@ -14,9 +14,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.google.firebase.auth.FirebaseAuth
+import com.proyecto.libroschill.R
 import com.proyecto.libroschill.features.comments.CommentsSection
 import com.proyecto.libroschill.features.books.components.HtmlText
 import com.proyecto.libroschill.data.model.Volume
@@ -98,7 +100,7 @@ fun BooksDetailScreen(volume: Volume, onBack: () -> Unit) {
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = "Descripción",
+                text = stringResource(R.string.Descripcion),
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.primary
             )
@@ -113,7 +115,7 @@ fun BooksDetailScreen(volume: Volume, onBack: () -> Unit) {
 
             if (description.length > 300) {
                 TextButton(onClick = { isExpanded = !isExpanded }) {
-                    Text(if (isExpanded) "Leer menos" else "Leer más")
+                    Text(if (isExpanded) stringResource(R.string.leerMenos) else stringResource(R.string.leerMasDescripcion))
                 }
             }
 
@@ -132,7 +134,7 @@ fun BooksDetailScreen(volume: Volume, onBack: () -> Unit) {
                 )
             }
 
-            // 🛒 Botón de Google Books
+            //Botón de Google Books
             Button(
                 onClick = {
                     val intent = Intent(Intent.ACTION_VIEW, Uri.parse(googleBooksUrl))
@@ -144,7 +146,7 @@ fun BooksDetailScreen(volume: Volume, onBack: () -> Unit) {
             ) {
                 Icon(Icons.Default.ShoppingCart, contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
-                Text("Ver en Google Books")
+                Text(stringResource(R.string.enlace))
             }
         }
     }
