@@ -38,4 +38,6 @@
     <string name="noBooksRead">No books read</string>
     <string name="noBooksPending">No pending books</string>
     <string name="RestablecerPassowrd">Reset Password</string>
+    <string name="CorreoEnviado">Password reset email sent</string>
+    <string name="EscribeComentario">Write a comment…</string>
 </resources>
