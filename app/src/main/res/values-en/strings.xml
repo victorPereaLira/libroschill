@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Books &amp; Chill</string>
+    <string name="fraseInitial1">Your book library in one place</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="fraseInitial2">Start your literary adventure</string>
+    <string name="crearCuenta">Create Account</string>
+    <string name="nombreUsuario">Username</string>
+    <string name="Correo">Email</string>
+    <string name="Password">Password</string>
+    <string name="ConfirmarPassword">Confirm Password</string>
+    <string name="Bienvenido">Welcome</string>
+    <string name="inicio">Home</string>
+    <string name="favoritos">Favorites</string>
+    <string name="leidos">Read</string>
+    <string name="pendientes">Pending</string>
+    <string name="busqueda">Book Search</string>
+    <string name="cerrarSesion">Log Out</string>
+    <string name="PasswordNoCoincide">Passwords do not match</string>
+    <string name="minimo6Caracteres">The password must be at least 6 characters long</string>
+    <string name="registrarse">Sign Up</string>
+    <string name="comentarios">Comments</string>
+    <string name="NoComentarios">No comments yet</string>
+    <string name="enviar">Send</string>
+    <string name="enlace">View on Google Books</string>
+    <string name="filtro">Filter</string>
+    <string name="nickname">Nickname</string>
+    <string name="Descripcion">Description</string>
+    <string name="leerMasDescripcion">Read more</string>
+    <string name="estadisticas">Statistics</string>
+    <string name="read">Read</string>
+    <string name="pending">Pending</string>
+    <string name="fav">Favorites</string>
+    <string name="noBooks">No books available</string>
+    <string name="noBooksFav">No favorite books</string>
+    <string name="noBooksRead">No books read</string>
+    <string name="noBooksPending">No pending books</string>
+    <string name="RestablecerPassowrd">Reset Password</string>
+</resources>
