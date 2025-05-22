@@ -1,25 +1,37 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.crashlytics)
+    alias(libs.plugins.googleServices)
 }
 
 android {
     namespace = "com.proyecto.libroschill"
     compileSdk = 35
-
+    configurations.all {
+        resolutionStrategy {
+            force("androidx.test.espresso:espresso-core:3.5.0")
+        }
+    }
     defaultConfig {
+
         applicationId = "com.proyecto.libroschill"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
+        buildConfigField("String", "GOOGLE_BOOKS_API_KEY", "\"${project.findProperty("GOOGLE_BOOKS_API_KEY")}\"")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
     }
 
+
+    buildFeatures {
+        buildConfig = true
+        compose = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -59,11 +71,47 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.firebase.firestore.ktx)
+    implementation(libs.books)
+    implementation(libs.androidx.compose)
+    implementation(libs.core.ktx)
+    implementation(libs.junit.junit)
+    implementation(libs.androidx.junit.ktx)
+    implementation(libs.androidx.ui.test.junit4.android)
     testImplementation(libs.junit)
+    testImplementation(libs.junit.jupiter)
     androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+
     androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
+
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.crashlytics)
+
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore)
+    implementation(libs.androidx.material.icons.extended)
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.5.1")
+    // Retrofit (para las peticiones a la API)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // Gson (para parsear el JSON)
+    implementation("com.google.code.gson:gson:2.10.1")
+    // Coroutines (para tareas asíncronas)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    // Coil (para cargar imágenes)
+    implementation("io.coil-kt:coil-compose:2.5.0")
+    // Lifecycle KTX (para los ViewModels)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    //Dependecias de materiales
+    implementation ("androidx.compose.material:material:1.6.1")
+
 }

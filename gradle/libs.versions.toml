@@ -4,10 +4,22 @@ kotlin = "1.9.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
-espressoCore = "3.6.1"
+espressoCore = "3.5.0"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.10.0"
 composeBom = "2024.04.01"
+firebaseBom = "33.1.1"
+service = "4.4.2"
+crashlytics = "3.0.3"
+navigationCompose = "2.7.7"
+firebaseFirestoreKtx = "25.1.4"
+books = "1.0.0"
+compose = "1.0.0-alpha04"
+junitJupiter = "5.8.1"
+coreKtxVersion = "1.6.1"
+junitJunit = "4.12"
+junitKtx = "1.2.1"
+uiTestJunit4Android = "1.8.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -25,7 +37,25 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 
+firebase-bom = {module = "com.google.firebase:firebase-bom", version.ref ="firebaseBom"}
+firebase-crashlytics = {module = "com.google.firebase:firebase-crashlytics"}
+firebase-auth = {module = "com.google.firebase:firebase-auth-ktx"}
+androidx-navigation-compose = {module = "androidx.navigation:navigation-compose ", version.ref = "navigationCompose"}
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
+firebase-firestore = {module="com.google.firebase:firebase-firestore"}
+books = { group = "com.google.android.mediahome", name = "books", version.ref = "books" }
+androidx-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose = { group = "androidx.xr.compose", name = "compose", version.ref = "compose" }
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }
+core-ktx = { group = "androidx.test", name = "core-ktx", version.ref = "coreKtxVersion" }
+junit-junit = { group = "junit", name = "junit", version.ref = "junitJunit" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
+androidx-ui-test-junit4-android = { group = "androidx.compose.ui", name = "ui-test-junit4-android", version.ref = "uiTestJunit4Android" }
+
+
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+crashlytics = {id = "com.google.firebase.crashlytics", version.ref = "crashlytics"}
+googleServices = { id = "com.google.gms.google-services", version = "4.4.2" }

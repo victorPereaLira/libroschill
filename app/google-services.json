@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "333899848821",
+    "project_id": "libroschill-e4a5a",
+    "storage_bucket": "libroschill-e4a5a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333899848821:android:661072c791f73fb8026c3c",
+        "android_client_info": {
+          "package_name": "com.proyecto.libroschill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333899848821-58htva4mkusuomvf8gn9sao5b081gf3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proyecto.libroschill",
+            "certificate_hash": "43dc6ea69f67875101f869e9f8c54359a178e200"
+          }
+        },
+        {
+          "client_id": "333899848821-0dj1qnregcji47csoqj7gnpacf4idf3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvw80TzIcDIiz8RMLyNfwrGhmD9drei_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333899848821-0dj1qnregcji47csoqj7gnpacf4idf3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
