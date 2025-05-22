@@ -18,7 +18,7 @@ import com.google.firebase.ktx.Firebase
 import com.proyecto.libroschill.ui.theme.LibroschillTheme
 import com.proyecto.libroschill.core.utlils.LanguageManager
 import com.proyecto.libroschill.navigation.NavigationWrapper
-
+import com.google.firebase.FirebaseApp
 class MainActivity : ComponentActivity() {
 
     private lateinit var navHostController: NavHostController
@@ -31,6 +31,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        FirebaseApp.initializeApp(this)
         auth = Firebase.auth
 
         enableEdgeToEdge()

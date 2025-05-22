@@ -119,7 +119,7 @@ fun BooksDetailScreen(volume: Volume, onBack: () -> Unit) {
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            // 💬 Sección de comentarios
+
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
